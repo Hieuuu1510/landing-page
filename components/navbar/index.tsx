@@ -4,11 +4,11 @@ const Navbar = () => {
   return (
     <header className="w-full h-[76px] bg-[var(--backgroundHeader)] text-white p-[10px]">
       <div className="flex items-center justify-between w-[1410px] my-0 mx-auto">
-        <div className="logo uppercase cursor-pointer font-black text-[26px] px-[10px]">
+        <div className="uppercase cursor-pointer font-black text-[26px] px-[10px]">
           Cozy Stay
         </div>
-        <div className="menu">
-          <ul className="flex gap-4 font-[--font-sans]">
+        <>
+          <ul className="flex gap-4">
             <li className="cursor-pointer my-[18px] mx-[15px]">
               <a href="/">Trang chủ</a>
             </li>
@@ -28,8 +28,10 @@ const Navbar = () => {
               <a href="">Liên hệ</a>
             </li>
           </ul>
+        </>
+        <div className="cursor-pointer px-[20px] py-[10px] bg-[var(--shop-color-main)] tracking-[1px] rounded-[22px]">
+          Đặt phòng
         </div>
-        <div className="action">action</div>
       </div>
     </header>
   );
