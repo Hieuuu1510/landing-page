@@ -1,0 +1,19 @@
+.navbar {
+    animation-name: navbar;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+@keyframes navbar {
+    from {
+        transform: translateY(-90px);
+    } to {
+        transform: translateY(0px);
+    }
+}
