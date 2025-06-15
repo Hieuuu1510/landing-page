@@ -17,3 +17,14 @@
         transform: translateY(0px);
     }
 }
+
+
+
+.navbar_mobile .ant-drawer-body>p {
+    padding-block: 12px;
+    font-size: 15px;
+}
+
+.navbar_mobile .ant-drawer-header .ant-drawer-title {
+    font-size: 18px;
+}

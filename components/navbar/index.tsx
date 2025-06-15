@@ -1,8 +1,11 @@
-import React, { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { PiList } from "react-icons/pi";
+import NavbarMobile from "./components/navbarMobile";
 
 const Navbar = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const [scrollEnd, setScrollEnd] = useState<boolean>(false);
+  const [showNavbarMobile, setShowNavbarMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,8 +38,15 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center justify-between max-w-[1410px] my-0 mx-auto md:max-w-[1210px]">
-          <div className="uppercase cursor-pointer font-black text-[26px] px-[10px]">
-            Cozy Stay
+          <div className="flex gap-4 items-center">
+            <PiList
+              size={25}
+              // className="cursor-pointer block lg:hidden"
+              onClick={() => setShowNavbarMobile(true)}
+            />
+            <div className="uppercase cursor-pointer font-black text-[26px] px-[10px]">
+              Cozy Stay
+            </div>
           </div>
           <ul className="hidden lg:flex">
             <li className="cursor-pointer my-[18px] mx-[15px]">
@@ -63,6 +73,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {showNavbarMobile && (
+        <NavbarMobile open={showNavbarMobile} setOpen={setShowNavbarMobile} />
+      )}
     </>
   );
 };
