@@ -1,30 +1,11 @@
-@keyframes flash {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes zoomIn {
-  0% {
+@keyframes zoomInSmooth {
+  from {
     transform: scale(1.2);
-    opacity: 0;
   }
-  100% {
+  to {
     transform: scale(1);
-    opacity: 1;
   }
 }
-
-.animate-flash {
-  animation: flash 0.3s ease-in-out;
-}
-
-.animate-zoom-in {
-  animation: zoomIn 1.3s cubic-bezier(0.22, 1, 0.36, 1);
+.animate-zoom {
+  animation: zoomInSmooth 1s ease-out;
 }
