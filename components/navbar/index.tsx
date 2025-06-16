@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex gap-4 items-center">
             <PiList
               size={25}
-              // className="cursor-pointer block lg:hidden"
+              className="cursor-pointer block lg:hidden"
               onClick={() => setShowNavbarMobile(true)}
             />
             <div className="uppercase cursor-pointer font-black text-[26px] px-[10px]">

@@ -20,37 +20,42 @@ const NavbarMobile = (props: IProps) => {
   return (
     <Drawer
       title="Danh mục"
-      // closable={{ "aria-label": "Close Button" }}
       onClose={onClose}
       open={open}
       placement="left"
       width={"50%"}
       className="navbar_mobile"
     >
-      {/* <p className="cursor-pointer">Trang chủ</p>
-      <p className="cursor-pointer">Về Cozy Stay</p>
-      <p className="cursor-pointer">Các loại phòng</p>
-      <p className="cursor-pointer">Dịch vụ tại Cozy Stay</p>
-      <p className="cursor-pointer">Tin tức & bài viết</p>
-      <p className="cursor-pointer">Liên hệ</p> */}
-      <ul className="!text-black">
-        <li className="cursor-pointer my-[18px] text-[15px] !text-black">
-          <a href="/">Trang chủ</a>
+      <ul>
+        <li className="cursor-pointer my-[18px] text-[15px]">
+          <a href="/" className="!text-black">
+            Trang chủ
+          </a>
         </li>
         <li className="cursor-pointer my-[18px] text-[15px]">
-          <a href="">Về Cozy Stay</a>
+          <a href="" className="!text-black">
+            Về Cozy Stay
+          </a>
         </li>
         <li className="cursor-pointer my-[18px] text-[15px]">
-          <a href="">Các loại phòng</a>
+          <a href="" className="!text-black">
+            Các loại phòng
+          </a>
         </li>
         <li className="cursor-pointer my-[18px] text-[15px]">
-          <a href="">Dịch vụ tại Cozy Stay</a>
+          <a href="" className="!text-black">
+            Dịch vụ tại Cozy Stay
+          </a>
         </li>
         <li className="cursor-pointer my-[18px] text-[15px]">
-          <a href="">Tin tức & Bài viết</a>
+          <a href="" className="!text-black">
+            Tin tức & Bài viết
+          </a>
         </li>
         <li className="cursor-pointer my-[18px] text-[15px]">
-          <a href="">Liên hệ</a>
+          <a href="" className="!text-black">
+            Liên hệ
+          </a>
         </li>
       </ul>
     </Drawer>
