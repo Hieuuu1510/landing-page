@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { Geist, Geist_Mono, Josefin_Slab } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Slides from "@/components/slides";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Cozy Stay</title>
+      </Head>
       <Navbar />
       <Slides />
     </>

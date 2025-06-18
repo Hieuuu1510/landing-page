@@ -49,22 +49,22 @@ const Navbar = () => {
             </div>
           </div>
           <ul className="hidden lg:flex">
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="/">Trang chủ</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Về Cozy Stay</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Các loại phòng</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Dịch vụ tại Cozy Stay</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Tin tức & Bài viết</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px]">
+            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Liên hệ</a>
             </li>
           </ul>
@@ -73,9 +73,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {showNavbarMobile && (
-        <NavbarMobile open={showNavbarMobile} setOpen={setShowNavbarMobile} />
-      )}
+      <NavbarMobile open={showNavbarMobile} setOpen={setShowNavbarMobile} />
     </>
   );
 };
