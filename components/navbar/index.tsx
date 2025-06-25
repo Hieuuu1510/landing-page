@@ -33,11 +33,11 @@ const Navbar = () => {
         className="h-[1px] bg-[var(--backgroundHeader)]"
       ></div>
       <div
-        className={`w-full h-auto bg-[var(--backgroundHeader)] text-white p-[10px] ${
+        className={`w-full h-auto bg-[var(--backgroundHeader)] text-white p-[10px] z-50 ${
           scrollEnd ? "navbar" : ""
         }`}
       >
-        <div className="flex items-center justify-between max-w-[1410px] my-0 mx-auto md:max-w-[1210px]">
+        <div className="container flex items-center justify-between my-0 mx-auto">
           <div className="flex gap-4 items-center">
             <PiList
               size={25}
