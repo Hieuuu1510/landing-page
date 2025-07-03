@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { PiList } from "react-icons/pi";
+import { PiCaretDown, PiList } from "react-icons/pi";
 import NavbarMobile from "./components/navbarMobile";
 
 const Navbar = () => {
@@ -58,8 +58,17 @@ const Navbar = () => {
             <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Các loại phòng</a>
             </li>
-            <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
+            <li className="relative cursor-pointer py-[18px] px-[15px] hover:text-[var(--shop-color-hover)] flex gap-1 justify-center items-center group">
               <a href="">Dịch vụ tại Cozy Stay</a>
+              <PiCaretDown />
+              <ul className="absolute bg-white rounded-[20px] text-black px-[15px] py-0 top-[120%] z-10 left-0 min-w-[180px] pointer-events-none opacity-0 transition-all ease-in-out duration-300 group-hover:top-[100%] group-hover:pointer-events-auto group-hover:opacity-100">
+                <li className="px-[5px] py-[15px] cursor-pointer hover:text-[var(--shop-color-hover)]">
+                  Nhà hàng
+                </li>
+                <li className="px-[5px] py-[15px] cursor-pointer hover:text-[var(--shop-color-hover)]">
+                  Sự kiện
+                </li>
+              </ul>
             </li>
             <li className="cursor-pointer my-[18px] mx-[15px] hover:text-[var(--shop-color-hover)]">
               <a href="">Tin tức & Bài viết</a>

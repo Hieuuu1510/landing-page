@@ -48,37 +48,36 @@ const HeroSlider = () => {
         }`}
       />
 
-      {/* Text cố định
-      <div className="absolute inset-0 z-6 flex items-center justify-center text-white text-center px-4">
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
-            Trải Nghiệm Tuyệt Vời
-          </h2>
-          <p className="text-lg md:text-xl">
-            Không gian sang trọng – Dịch vụ chuyên nghiệp
-          </p>
-        </div>
-      </div> */}
-
-      <div className="absolute top-[80px] left-0 right-0 bottom-[80px] text-white z-5 mx-auto my-0 container flex px-[12px]">
+      <div className="absolute top-[80px] left-0 right-0 bottom-[80px] text-white z-5 mx-auto my-0 container lg:flex  px-[12px]">
         <div className="lg:w-[66.6666%] flex flex-col justify-end">
-          <p className="text-[16px] mb-5">WELCOME TO COZY STAY</p>
-          <h2 className="text-[60px] font-bold mb-[13px]">
+          <p className="text-[14px] lg:text-[16px] mb-5">
+            WELCOME TO COZY STAY
+          </p>
+          <h2 className="text-[25px] lg:text-[60px] font-bold mb-[13px]">
             Nơi nghỉ dưỡng yên bình cho những người yêu thiên nhiên
           </h2>
-          <p className="text-[16px] mt-4 mb-5">
+          <p className="text-[14px] lg:text-[16px] mt-4 mb-5">
             Đắm mình trong những phẩm chất phục hồi của thiên nhiên, tránh xa
             những xáo trộn của cuộc sống thường ngày.
           </p>
           <div className="flex flex-row gap-[15px]">
-            <button className="px-[30px] py-[10px] bg-[var(--backgroundHeader)] rounded-[30px] text-[14px] tracking-[1px] cursor-pointer">
-              Xem thêm
+            <button className="relative overflow-hidden group px-[30px] py-[10px] rounded-[30px] bg-[var(--backgroundHeader)] cursor-pointer text-[14px] text-[var(--shop-color-button-text)] transition-opacity duration-[450ms] ease-[cubic-bezier(0.785,0.135,0.15,0.86)] hover:opacity-90">
+              <div
+                className="absolute top-0 left-0 h-full w-0 bg-[var(--shop-color-main)] z-0 
+                           transition-[width] duration-[450ms] ease-[cubic-bezier(0.785,0.135,0.15,0.86)] 
+                          group-hover:w-full"
+              ></div>
+
+              <span className="relative z-20">Xem thêm</span>
             </button>
-            <button className="btn btn-primary">Đặt phòng</button>
+
+            <button className="px-[30px] py-2.5 rounded-[30px] border border-white text-[14px] cursor-pointer transition-all duration-[450ms] ease-[cubic-bezier(0.785,0.135,0.15,0.86)] hover:bg-[var(--shop-color-main)]">
+              Đặt phòng
+            </button>
           </div>
         </div>
         <div className="lg:w-[33.3333%]">
-          <div className="social">
+          <div className="social sm:flex lg:block gap-2.5 sm:pt-5">
             <div className="flex justify-end">
               <PiFacebookLogo className="cursor-pointer w-[40px] h-[40px] mb-2" />
             </div>
@@ -92,7 +91,7 @@ const HeroSlider = () => {
               <PiTiktokLogo className="cursor-pointer w-[40px] h-[40px] mb-2" />
             </div>
           </div>
-          <div className="video lg:w-auto lg:max-h-[291px] xs:max-w-[690px] xs:max-h-[460px] relative mt-[50px]">
+          <div className="video lg:w-auto lg:max-h-[291px] xs:max-w-[690px] xs:max-h-[460px] relative lg:mt-[50px] sm:mt-5">
             <img
               src="/images/slide_video_img.jpg"
               alt="image_video"
