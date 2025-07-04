@@ -40,7 +40,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full lg:h-[691px] sm:h-[967px] overflow-hidden">
+    <div className="relative w-full lg:h-[691px] h-[967px] overflow-hidden">
       {/* Flash overlay */}
       <div
         className={`absolute inset-0 z-5 pointer-events-none transition-opacity duration-300 bg-gray-300 ${
@@ -48,7 +48,7 @@ const HeroSlider = () => {
         }`}
       />
 
-      <div className="absolute top-[80px] left-0 right-0 bottom-[80px] text-white z-5 mx-auto my-0 container lg:flex  px-[12px]">
+      <div className="absolute top-[80px] left-0 right-0 bottom-[80px] text-white z-20 mx-auto my-0 container lg:flex  px-[12px]">
         <div className="lg:w-[66.6666%] flex flex-col justify-end">
           <p className="text-[14px] lg:text-[16px] mb-5">
             WELCOME TO COZY STAY
@@ -77,7 +77,7 @@ const HeroSlider = () => {
           </div>
         </div>
         <div className="lg:w-[33.3333%]">
-          <div className="social sm:flex lg:block gap-2.5 sm:pt-5">
+          <div className="social flex lg:block gap-2.5 pt-5">
             <div className="flex justify-end">
               <PiFacebookLogo className="cursor-pointer w-[40px] h-[40px] mb-2" />
             </div>
@@ -91,11 +91,11 @@ const HeroSlider = () => {
               <PiTiktokLogo className="cursor-pointer w-[40px] h-[40px] mb-2" />
             </div>
           </div>
-          <div className="video lg:w-auto lg:max-h-[291px] xs:max-w-[690px] xs:max-h-[460px] relative lg:mt-[50px] sm:mt-5">
+          <div className="video lg:w-auto lg:max-h-[291px] max-w-[690px] max-h-[460px] relative lg:mt-[50px] mt-5">
             <img
               src="/images/slide_video_img.jpg"
               alt="image_video"
-              className="rounded-[20px] lg:max-h-[291px] xs:max-h-[460px] w-full object-cover"
+              className="rounded-[20px] lg:max-h-[291px] max-h-[460px] w-full object-cover"
             />
             <div className="absolute inset-0 flex justify-center items-center">
               <PiYoutubeLogo className="cursor-pointer bg-white w-[70px] h-[70px] rounded-[50%] p-3 text-black hover:bg-[var(--shop-color-main)] hover:text-white transition-all duration-300 delay-100" />
