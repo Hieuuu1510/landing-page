@@ -50,13 +50,13 @@ const HeroSlider = () => {
 
       <div className="absolute top-[80px] left-0 right-0 bottom-[80px] text-white z-20 mx-auto my-0 container lg:flex  px-[12px]">
         <div className="lg:w-[66.6666%] flex flex-col justify-end">
-          <p className="text-[14px] lg:text-[16px] mb-5">
+          <p className="text-[14px] md:text-[16px] mb-5">
             WELCOME TO COZY STAY
           </p>
-          <h2 className="text-[25px] lg:text-[60px] font-bold mb-[13px]">
+          <h2 className="text-[25px] md:text-[30px] lg:text-[40px] xl:text-[60px] font-bold mb-[13px]">
             Nơi nghỉ dưỡng yên bình cho những người yêu thiên nhiên
           </h2>
-          <p className="text-[14px] lg:text-[16px] mt-4 mb-5">
+          <p className="text-[14px] md:text-[16px] mt-4 mb-5">
             Đắm mình trong những phẩm chất phục hồi của thiên nhiên, tránh xa
             những xáo trộn của cuộc sống thường ngày.
           </p>
